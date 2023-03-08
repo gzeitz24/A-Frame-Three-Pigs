@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>3 Little Pigs</title>
+  <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@436d40c/dist/aframe-extras.min.js"></script>
+</head>
+
+<body>
+  <!-- textures -->
+  <a-scene renderer="colorManagement: true">
+    <a-assets>
+      <a-asset-item id="wolf" src="assets/wolf/scene.gltf"></a-asset-item>
+      <a-asset-item id="pig" src="assets/pig/scene.gltf"></a-asset-item>
+      <a-asset-item id="smoke" src="assets/smoke/scene.gltf"></a-asset-item>
+      <img id="straw" src="assets/straw.jpeg">
+      <img id="wood" src="assets/wood.jpeg">
+      <img id="brick" src="assets/brick.jpeg">
+      <img id="chimney" src="assets/Chimney.jpeg">
+    </a-assets>
+
+    <!-- ground -->
+    <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" color="#293"></a-plane>
+    <!-- Motion -->
+
+    <a-entity id="rig" movement-controls="fly: true; speed: 0.3">
+      <a-entity camera position="0 1.6 0" look-controls>
+      </a-entity>
+    </a-entity>
+
+    <!-- sky -->
+    <a-sky color="#87CEEB"></a-sky>
+    <!-- wolf -->
+    <a-entity gltf-model="#wolf" position="0 0 0" rotation="0 180 0" scale="1 1 1"></a-entity>
+
+    <!-- house -->
+    <a-entity position="-5 0 -2.5" rotation="0 45 0" src="#straw">
+
+      <a-box position="-1 1.25 -2" height="3" depth="0.2" width="1" src="#straw"></a-box>
+      <a-box position="1 1.25 -2" height="3" depth="0.2" width="1" src="#straw"></a-box>
+      <a-box position="0 2.25 -2" height="1" depth="0.2" width="1" src="#straw"></a-box>
+      <a-box position="-1.6 1.24 -3.4" rotation="0 -90 0" height="3" depth="0.2" width="3" src="#straw"></a-box>
+      <a-box position="1.6 1.24 -3.4" rotation="0 -90 0" height="3" depth="0.2" width="3" src="#straw"></a-box>
+      <a-box position="0 1.25 -4.8" height="3" depth="0.2" width="3" src="#straw"></a-box>
+      <a-cylinder position="0 3.2 -3.4" rotation="-90 0 0" segments-radial="3" height="3" width="5" scale="1.75"
+        src="#straw"></a-cylinder>
+      <a-box position="-1.3 3 -3.4" rotation="45 90 0" height="3.8" depth="0.2" width="3" src="#straw"></a-box>
+      <a-box position="1.3 3 -3.4" rotation="-45 90 0" height="3.8" depth="0.2" width="3" src="#straw"></a-box>
+      <a-entity gltf-model="#pig" position="0 0 -2.5" rotation="0 -45 0" scale="0.01 0.01 0.01"></a-entity>
+
+    </a-entity>
+
+    <!-- house -->
+    <a-entity position="5 0 -2.5" rotation="0 -45 0" src="#brick">
+
+      <a-box position="-1 1.25 -2" height="3" depth="0.2" width="1" src="#brick"></a-box>
+      <a-box position="1 1.25 -2" height="3" depth="0.2" width="1" src="#brick"></a-box>
+      <a-box position="0 2.25 -2" height="1" depth="0.2" width="1" src="#brick"></a-box>
+      <a-box position="-1.6 1.24 -3.4" rotation="0 -90 0" height="3" depth="0.2" width="3" src="#brick"></a-box>
+      <a-box position="1.6 1.24 -3.4" rotation="0 -90 0" height="3" depth="0.2" width="3" src="#brick"></a-box>
+      <a-box position="0 1.25 -4.8" height="3" depth="0.2" width="3" src="#brick"></a-box>
+      <a-cylinder position="0 3.2 -3.4" rotation="-90 0 0" segments-radial="3" height="3" width="5" scale="1.75"
+        src="#brick"></a-cylinder>
+      <a-box position="-1.3 3 -3.4" rotation="45 90 0" height="3.8" depth="0.2" width="3" src="#brick"></a-box>
+      <a-box position="1.3 3 -3.4" rotation="-45 90 0" height="3.8" depth="0.2" width="3" src="#brick"></a-box>
+      <a-box position="1.3 3 -3.4" rotation="-45 90 0" height="3.8" depth="0.2" width="3" src="#brick"></a-box>
+      <a-box position="1 2 -5" height="5" depth="1" width="1" src="#chimney"></a-box>
+      <a-entity gltf-model="#smoke" position="-3.2 -5.5 -8.25"></a-entity>
+      <a-entity gltf-model="#pig" position="0 0 -2.5" rotation="0 -45 0" scale="0.01 0.01 0.01"></a-entity>
+
+    </a-entity>
+
+    <!-- house 3 -->
+    <a-entity position="0 0 -5" src="#wood">
+
+      <a-box position="-1 1.25 -2" height="3" depth="0.2" width="1" src="#wood"></a-box>
+      <a-box position="1 1.25 -2" height="3" depth="0.2" width="1" src="#wood"></a-box>
+      <a-box position="0 2.25 -2" height="1" depth="0.2" width="1" src="#wood"></a-box>
+      <a-box position="-1.6 1.24 -3.4" rotation="0 -90 0" height="3" depth="0.2" width="3" src="#wood"></a-box>
+      <a-box position="1.6 1.24 -3.4" rotation="0 -90 0" height="3" depth="0.2" width="3" src="#wood"></a-box>
+      <a-box position="0 1.25 -4.8" height="3" depth="0.2" width="3" src="#wood"></a-box>
+      <a-cylinder position="0 3.2 -3.4" rotation="-90 0 0" segments-radial="3" height="3" width="5" scale="1.75"
+        src="#wood"></a-cylinder>
+      <a-box position="-1.3 3 -3.4" rotation="45 90 0" height="3.8" depth="0.2" width="3" src="#wood"></a-box>
+      <a-box position="1.3 3 -3.4" rotation="-45 90 0" height="3.8" depth="0.2" width="3" src="#wood"></a-box>
+      <a-entity gltf-model="#pig" position="0 0 -2.5" rotation="0 -45 0" scale="0.01 0.01 0.01"></a-entity>
+
+    </a-entity>
+
+
+  </a-scene>
+
+</body>
+
+</html>

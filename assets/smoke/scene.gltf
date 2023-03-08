@@ -1,0 +1,274 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 48,
+      "max": [
+        1.2851999998092651,
+        1.286579966545105,
+        9.828539848327637
+      ],
+      "min": [
+        -3.5439300537109375,
+        -11.42063045501709,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 576,
+      "componentType": 5126,
+      "count": 48,
+      "max": [
+        0.9575045704841614,
+        0.9130592346191406,
+        0.9170452952384949
+      ],
+      "min": [
+        -0.9654574990272522,
+        -0.9737323522567749,
+        -0.8845515847206116
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1152,
+      "componentType": 5126,
+      "count": 48,
+      "max": [
+        0.8006300330162048,
+        1.7981204986572266,
+        0.5024800300598145
+      ],
+      "min": [
+        -0.8006298542022705,
+        -0.7881100177764893,
+        -0.1624898910522461
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1728,
+      "componentType": 5126,
+      "count": 48,
+      "max": [
+        0.6508699655532837,
+        0.6055599451065063,
+        0.3256502151489258
+      ],
+      "min": [
+        -0.6508700847625732,
+        -0.6055600047111511,
+        -0.3256502151489258
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 276,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 69,
+      "max": [
+        2.833329916000366
+      ],
+      "min": [
+        0.0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 276,
+      "componentType": 5126,
+      "count": 138,
+      "max": [
+        0.8055599927902222
+      ],
+      "min": [
+        0.0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "animations": [
+    {
+      "channels": [
+        {
+          "sampler": 0,
+          "target": {
+            "node": 3,
+            "path": "weights"
+          }
+        }
+      ],
+      "name": "Key.001Action",
+      "samplers": [
+        {
+          "input": 5,
+          "interpolation": "LINEAR",
+          "output": 6
+        }
+      ]
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Inuciian (https://sketchfab.com/Inuciian)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/smoke-40b77d61c70a4d2b932bec73ea1a704c",
+      "title": "Smoke"
+    },
+    "generator": "Sketchfab-12.66.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1104,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 2304,
+      "byteOffset": 1104,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 828,
+      "byteOffset": 3408,
+      "name": "floatBufferViews"
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 4236,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "name": "Smoke_mat",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.4617982209,
+          0.5235022902,
+          0.8000000715,
+          0.25
+        ],
+        "metallicFactor": 0.0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "smoke_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4,
+          "targets": [
+            {
+              "POSITION": 2
+            },
+            {
+              "POSITION": 3
+            }
+          ]
+        }
+      ],
+      "weights": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "Root"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        0.23684000000000002,
+        0.05871000000000001,
+        -0.003110000000000001,
+        0.0,
+        -0.05858000000000001,
+        0.23458,
+        -0.03298,
+        0.0,
+        -0.004940000000000002,
+        0.032760000000000004,
+        0.24177,
+        0.0,
+        4.21567,
+        -3.3142199999999997,
+        9.850400000000002,
+        1.0
+      ],
+      "name": "smoke"
+    },
+    {
+      "mesh": 0,
+      "name": "smoke_0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
